@@ -1,7 +1,7 @@
-CREATE TABLE `sap_sales_quote_collection_data`
+CREATE TABLE `sap_sales_quote_sales_quote_collection_data`
 (
-			`ObjectID`                               varchar(70)     NOT NULL,
-			`ID`                                     varchar(35)     DEFAULT NULL,
+			`ID`                                     varchar(35)     NOT NULL,
+			`ObjectID`                               varchar(70)     DEFAULT NULL,
 			`BuyerID`                                varchar(35)     DEFAULT NULL,
 			`Name`                                   varchar(80)     DEFAULT NULL,
 			`ProcessingTypeCode`                     varchar(4)      DEFAULT NULL,
@@ -120,7 +120,7 @@ CREATE TABLE `sap_sales_quote_collection_data`
 			`EntityLastChangedOn`                    varchar(130)    DEFAULT NULL,
 			`ETag`                                   varchar(130)    DEFAULT NULL,
 			`DataloaderKUT`                          varchar(80)     DEFAULT NULL,
-			 PRIMARY KEY (`ObjectID`)
+			 PRIMARY KEY (`ID`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
 
